@@ -1,0 +1,38 @@
+
+<form  [formGroup]="studentForm" class="form-horizontal-">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">StudentForm</h3>
+        </div>
+    </div>
+    <div class="panel-body">
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="firstname">firstname:</label>
+        <div class="col-sm-8">
+            <input type="text" id="firstname" class="form-control" formControlName="firstname">
+        </div>
+    </div><br>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="lastname">lastname:</label>
+        <div class="col-sm-8">
+            <input type="text" id="lastname" class="form-control" formControlName="lastname">
+        </div>
+    </div><br>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="age">age:</label>
+        <div class="col-sm-8">
+            <input type="text" id="age" class="form-control" formControlName="age">
+        </div>
+    </div><br>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="location">location:</label>
+        <div class="col-sm-8">
+            <input type="text" id="location" class="form-control" formControlName="location">
+        </div>
+    </div>
+</div>
+    <div class="panel-footer">
+
+    <button class="btn btn-primary" (click)="save()">Save</button>
+</div>
+</form>
