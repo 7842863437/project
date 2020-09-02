@@ -1,0 +1,40 @@
+<form  [formGroup]="Registartionform" class="form-horizontal-">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Registartionform</h3>
+        </div>
+    </div>
+    <div class="panel-body">
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="fullname">fullname:</label>
+        <div class="col-sm-8">
+            <input type="text" id="fullname" class="form-control" formControlName="fullname">
+        </div>
+    </div><br>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="email">email:</label>
+        <div class="col-sm-8">
+            <input type="text" id="email" class="form-control" formControlName="email">
+        </div>
+    </div><br>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="age">age:</label>
+        <div class="col-sm-8">
+            <input type="text" id="age" class="form-control" formControlName="age">
+        </div>
+    </div><br>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="location">location:</label>
+        <div class="col-sm-8">
+            <input type="text" id="location" class="form-control" formControlName="location">
+        </div>
+    </div>
+</div>
+
+    <div class="panel-footer btn-toolbar">
+
+    <button class="btn btn-success" (click)="reg()" [disabled]="!Registartionform.valid">Save</button>
+   <!-- <button class="btn btn-success" (click)="set()" >load data</button> -->
+    <button class="btn btn-success" (click)="patchValue()" >load patchVlaue</button>
+</div>
+</form>
