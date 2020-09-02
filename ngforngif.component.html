@@ -1,0 +1,10 @@
+<div id="d1">
+    <input type ="text" [(ngModel)]="task">
+<button (click)="addtask()">AddTask</button>
+<ul>
+    <li *ngFor="let t of tasks; let i=index">
+         {{t.val}}
+    <button (click)="deletetask(i)">del</button>
+    </li>
+</ul>
+</div>
